@@ -1,0 +1,315 @@
+/* NEED HELP SECTION */
+.need {
+    background-color: #005DA4;
+    position: static;
+    display: block;
+    height: 38px;
+}
+
+#help {
+    color: white;
+    cursor: pointer;
+    padding: 1vh 13vh;
+    font-weight: bold;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin-right: 271px;
+    margin-top: -39px;
+}
+
+#need a {
+    color: white;
+    font-weight: 100%;
+    text-decoration: none;
+    float: right;
+    margin-right: 75px;
+    margin-top: -43px;
+}
+
+/* Need popup form */
+/* .req{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+} */
+
+/* POPUP FORM */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.loginform {
+    width: 330px;
+    height: 378px;
+    background-color: #e9e0e0;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -60%;
+    z-index: 9;
+    transition: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    transform: translate(-50%, -69%);
+}
+
+.loginform input {
+    height: 29px;
+    border: 2px solid black;
+}
+
+.loginform button {
+    float: right;
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.showloginform {
+    top: 50%;
+}
+
+.loginform span {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: #79b3a9;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+/* LOGO SECTION */
+
+.logo{
+  height: 80px;
+}
+#logo{
+    width: 80px;
+    display: flex;
+    margin-left: 102px;
+    margin-top: 10px;
+}
+.mail{
+    float: right;
+    margin-right: 111px;
+    margin-top: -37px;
+}
+.mail span{
+    display: block;
+    margin-left: 37px;
+    margin-top: -31px;
+    font-size: 20px;
+}
+.fa-envelope{
+   color: blue;
+   font-size: 29px;
+}
+#mail{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    color: black;
+}
+
+/* NavBar section */
+.over {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.login {
+    width: 330px;
+    height: 500px;
+    background-color: rgb(83, 83, 119);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -530%;
+    z-index: 9;
+    transition: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    transform: translate(-50%, -69%);
+}
+
+.login input {
+    height: 29px;
+    border: 2px solid black;
+   padding-bottom: 5px;
+}
+.form-label{
+    color: white;
+}
+
+.login button {
+    float: right;
+   
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.showlogin{
+    top: 430%;
+}
+
+.login span {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -40px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    background-color: #79b3a9;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+.login h4{
+    color: white;
+}
+/* Slider section */
+.slider img{
+    height: 450px;
+}
+.carousel-control-next{
+    background-color: green;
+    height: 30px;
+    margin-top: 213px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 63%;
+    margin-right: 85px;
+}
+.carousel-control-prev{
+    background-color: green;
+    height: 30px;
+    margin-top: 213px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 63%; 
+    margin-left: 85px;
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width :480px) {
+
+    /* Need help section */
+    .need {
+        height: 81px;
+    }
+
+    #help {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .fa-phone {
+        margin-left: 59px;
+        position: absolute;
+    }
+
+    #need {
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    #no {
+        margin-left: 37px;
+        font-size: 12px;
+    }
+
+    .loginform {
+        width: 200px;
+        height: 350px;
+        padding: 2px;
+        top: -50px;
+        transform: translate(-50%, -89%);
+    }
+    .showloginform {
+        top: 92%;
+    }
+
+    .loginform span {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: -30px;
+        width: 25px;
+        cursor: pointer;
+        height: 25px;
+        line-height: 25px;
+        background-color: #79b3a9;
+        text-align: center;
+        color: rgb(240, 235, 235);
+        border-radius: 50%;
+        font-size: 20px;
+    
+    }
+    /* Logo section */
+    #logo{
+        margin-left: 22px;
+    }
+    .mail{
+       display: none;
+    }
+    /* Enqurie Button */
+    header{
+        margin-top: -39px;
+    
+    }
+    .login{
+        display: none;
+    }
+
+   /* Slider section */
+
+   .slider img{
+    height: 250px;
+}
+.carousel-control-next{
+    margin-top: 112px;
+    margin-right: 6px;
+}
+.carousel-control-prev{
+    margin-top: 112px;
+    margin-left: 6px;
+}
+    
+}
