@@ -68,3 +68,15 @@
             document.querySelector('.over').classList.remove('show')
             document.querySelector('.login').classList.remove('showlogin')
         }
+
+        // slider enquri button
+
+        function view() {
+            document.querySelector('.enquir').classList.add('view')
+            document.querySelector('.log').classList.add('viewlog')
+        }
+
+        function hide() {
+            document.querySelector('.enquir').classList.remove('view')
+            document.querySelector('.log').classList.remove('viewlog')
+        }

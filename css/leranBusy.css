@@ -1,0 +1,41 @@
+marquee{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.learn{
+    margin-left: 127px;
+}
+#learn{
+    margin-left: 127px;
+    margin-top: 34px;
+    font-weight: 800;
+}
+#learnbusy{
+    float: right;
+    width: 254px;
+    margin-right: 65px;
+    margin-top: -129px;
+    height: 181px;
+}
+#contactus{
+    background-color: #7171e3;
+    color: white;
+    border: none;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 363px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#contact{
+    background-color: #7171e3;
+    color: white;
+    border: none;
+    width: 190px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 28px;
+    border-radius: 10px;
+    padding: 10px;
+}

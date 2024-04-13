@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="css/index.css">
+ 
+
+
 </head>
 
 <body>
@@ -71,10 +74,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -100,12 +103,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Learn Busy</a>
+                            <a class="nav-link" href="learnBusy.html">Learn Busy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
-                       
+
                     </ul>
                     <form class="d-flex">
                         <button onclick="show() ">Enquire
@@ -155,7 +158,8 @@
         </nav>
     </header>
 
-    <!-- Slider Section -->
+    <!-- Slider section -->
+
     <div class="slider">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -175,7 +179,7 @@
                     <img src="image/Slide2.jpg " class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/Slide4.jpg " class="d-block w-100 " alt="...">
+                    <img src="image/software-for-accountant.jpg" class="d-block w-100 " alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -189,14 +193,386 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <form class="d-flex">
+            <button onclick="view()" id="enquri">Enquire
+                Now</button>
+            <div class="enquir"></div>
+            <div class="log">
+
+                <h4>Contact</h4>
+                <span onclick="hide()">&times;</span>
+                <hr>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="Company" placeholder=" Company Name" required>
+                    <p id="userError" class="error"></p>
+                </div>
+                <div class="form-floating pb-2">
+                    <textarea class="form-control" placeholder="Address 1" id="floatingTextarea"></textarea>
+                    <label for="floatingInputInvalid">Address 1</label>
+                </div>
+                <div class="form-floating pb-2">
+                    <textarea class="form-control" placeholder="Address 2" id="floatingTextarea"></textarea>
+                    <label for="floatingInputInvalid">Remarks</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    <p id="userError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                    <p id="emailError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="City" required>
+                    <p id="emailError" class="error"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                    <p id="phoneError" class="error"></p>
+                    <hr>
+                </div>
+                <a href=""> <button type="submit" class="btn btn-primary">Sumbit</button> </a>
+
+        </form>
     </div>
 
+    <!-- About us -->
+    <section class="who">
+        <div id="who">
+            <p class="we">WHO WE ARE</p>
+            <h1 id="we">Business Software <span>Professionals</span></h1>
+            <p class="global">
+                Global Business Sloutions is a leading Accounting Software Solutions provider for Large Businesses and
+                SMEs, serving more than 2500 Clients across India, having its offices in Mumbai.
+            </p>
+            <a href="" class="read"><button>Read More</button></a>
+        </div>
+        <div class="we-are">
+            <img src="image/we-are.png" alt="" srcset="">
+        </div>
+    </section>
 
+
+    <!-- Products section -->
+    <section id="Product">
+        <div class="products">
+            <h1>Products</h1>
+            <span id="products">Boost Your Business Efficiency</span>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <div class="carditem">
+                        <div class="card">
+                            <img src="image/busy-mobile-app-banner-img-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App1</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/busy-no-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App2</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="500">
+                    <div class="carditem">
+                        <div class="card">
+                            <img src="image/busy-online-banner-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App3</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/busy-to-google-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App4</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carditem">
+                        <div class="card">
+                            <img src="image/busy-online-banner-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App5</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/busy-to-google-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Busy Mobile App6</h5>
+                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
+                                    Accounting
+                                    Software to offer world-class features &amp; experience to customers. allows users
+                                    to sync data
+                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control1" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control2" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service">
+        <h1 id="service">Service</h1>
+        <p id="ser">Integrating application into an organization’s workflow &
+            maintain on <span>its maximum efficacy.</span></p>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 w-200px h-400px">
+                        <div class="col">
+                            <div class="card1">
+                                <img src="image/accounting.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">BUSY Implementation Services</h5>
+                                    <p class="card-text">Adopting and integrating the Software Application into a
+                                        Business Workflow. We do the more than just getting software up and running,
+                                        enhance your experience by bridging the gap between business and Software</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/customer-service.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Busy Custmosation</h5>
+                                    <p class="card-text">Customization and development services around your Busy
+                                        Accounting software allows you to imagine what you want or how something should
+                                        work</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/bill.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Busy Support & Annual Maintenece Service</h5>
+                                    <p class="card-text">Support Services are designed to ensure that you never run out
+                                        of time due to system failure. One call from your team will provide them BUSY
+                                        trained professional to resolve your problems with speed and efficiency.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/lan.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">BUSY Corporate Training</h5>
+                                    <p class="card-text">An execution of improving the workforce in order to make them
+                                        proficient of handling modern business competitions by improving their approach
+                                        and productivity and thus, making effective utilization of resources. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 w-200px h-400px ">
+                        <div class="col">
+                            <div class="card1">
+                                <img src="image/dedicated-service.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Data Hosting Services - Dedicated & Managed</h5>
+                                    <p class="card-text">A complete Solution to work from home or work from multiple
+                                        Location on centralized database. No need to invest in highly infrastructure and
+                                        security to access your Business data from anywhere anytime.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/accounting.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/accounting.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="row1">
+                            <div class="card1">
+                                <img src="image/accounting.png" class="acc" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev" id="carousel-control-prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next" id="carousel-control-prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+<!-- WHY CHOOSE US -->
+
+<section id="whyChoose">
+    <h2 id="why">Why Choose Us?</h2>
+    <p id="us">Ensuring every single customer is 100% satisfied with the <span>Products & Services, GBS
+            Provides</span></p>
+    <div class="us">
+        <img src="image/gbs.png" alt="" srcset="">
+        <p>A dedicated Team of Professionals from the Industry with vast experience headed by Mr. Ajay Vishwakarma
+            having more than 14 years of experience and expertise in a range of software & services, which includes
+            Accounting, Taxation, Inventory Management, Payroll Management, HRMS and CRM. Our Clients trust us for -
+        </p>
+    </div>
+    <ul class="most">
+        <li>Most Cost-Effective and Reasonable Business Software Provider</li>
+        <li>Expertise in Offering Add-Ons and Individually Customized Software Provider</li>
+        <li>Timely, Convenient Expert Service Provider at Very Reasonable Cost</li>
+        <li>On-Site User Training and Support Provider</li>
+        <li>Yearly Service Support at Very Reasonable Cost</li>
+        <li>Easy Software Upgradation and Update.</li>
+        <li>One Point Solution for all your business needs related to Accounting Software, Inventory Management,
+            Payroll Management, HRMS, CRM & Data Hosting Services etc.</li>
+
+    </ul>
+</section>
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer">
+            <div id="footer">
+                <img src="image/gbs.png" alt="" class="footerlogo">
+                <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
+                    in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
+            </div>
+            <div class="useful">
+                <h2>Useful Link</h2>
+                <ul id="useful">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Data Hosting</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Busy Integrated Add-Ons</a></li>
+                    <li><a href="">BUSY Software Associated Services</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h2>Quick Link</h2>
+                <ul id="useful">
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Registered Office :</span>
+                <p class="register">A-204, Sunnidhi Park, Nr.PMC Bank, New Link Road, Vasai(East), Thane-401209.</p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9320763716</span>
+
+            </div>
+
+            <div id="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="register">Sales Office:</span>
+                <p class="register">D-212, Shanti Shopping Center, Nr.Railway Station, Mira Road(East), Mumbai-401107
+                </p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="mo">9270052306/9120004004</span>
+
+            </div>
+        </div>
+
+        <img src="image/busy-logo.jpg" alt="" srcset="" id="busylogo">
+
+        <div class="footer-font">
+            <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/rohityaya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <hr>
+        <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
+        </p>
+    </footer>
 
 
     <script src="js/script.js"></script>
 
-   
+
 </body>
 
 </html>
