@@ -61,7 +61,7 @@
     <!-- Navbar Section -->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: cursive;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -76,39 +76,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Product & Pricing
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Busy Software</a></li>
-                                <li><a class="dropdown-item" href="#">Busy Online</a></li>
-                                <li><a class="dropdown-item" href="#">Busy Mobile App</a></li>
-                                <li><a class="dropdown-item" href="#">Busy Integrated Add-Ons</a></li>
-                                <li><a class="dropdown-item" href="#">Ts Plus-Remte Access Software</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Product</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Busy Software Associated Services</a></li>
-                                <li><a class="dropdown-item" href="#">Data Hosting</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Service</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/learnBusy.html">Learn Busy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
                         </li>
 
                     </ul>
                     <form class="d-flex">
-                        <button onclick="show() ">Enquire
+                        <button onclick="show() " class="now">Enquire
                             Now</button>
                         <div class="over"></div>
                         <div class="login">
@@ -167,36 +150,82 @@
 
     <!-- Contact us button -->
 
-    <button id="contactus">Contact Us for job</button>
-    <div class="contact"></div>
-    <div class="contactus">
-        <h3>Contact us for job</h3>
-        <span>&times;</span>
-        <hr>
-        <h4>Activate dialer Mobile No:</h4>
-        <h5>9270052306</h5>
-        <hr>
-        <button>Close</button>
+    <button id="contactus" type="submit" onclick="openpopup()">Contact Us for job</button>
+    <div class="popup" id="popup">
+        <form action="">
+            <h2>Contact us for job</h2>
+            <hr>
+            <h3>Activate dialer Mobile No:</h3>
+            <h4>9270052306</h4>
+            <hr>
+            <button onclick="closepopup()" type="submit">Close</button>
+        </form>
     </div>
 
 
+
     <!-- Send Resume -->
-    <button id="contact">Send Resume</button>
+    <button id="cont" onclick="openpop()">Send Resume</button>
+    <div class="pop" id="pop">
+        <form action="">
+            <h2>Upload Resume</h2>
+            <span onclick="closepop()">&times;</span>
+            <hr>
+            <input type="text" id="popname" placeholder="Name">
+            <br>
+            <input type="email" id="nam" placeholder="Email">
+            <input type="tel" id="nam" placeholder="Phone Number">
+            <br>
+            <label for="upload" id="lab">Upload Resum</label>
+            <br>
+            <input type="file" id="fliename" placeholder="Upload File">
+            <br>
+            <hr>
+            <button type="submit">Sumbit</button>
+        </form>
+    </div>
+
+    <!-- Upgrad For Software -->
+    <div id="upgrade">
+        <button class="upgrade" onclick="openpo()">Upgrade for Software</button>
+
+        <div class="po" id="po">
+            <form action="">
+                <h2>Upgrade Your Software</h2>
+                <span onclick="closepo()">&times;</span>
+                <hr>
+                <input type="text" id="busysr" placeholder="Busy Sr">
+                <br>
+                <input type="text" id=" co.name" placeholder="Company Name">
+                <br>
+                <input type="text" id="name" placeholder="Name">
+                <input type="tel" id="mobile" placeholder="Mobile No.">
+                <br>
+                <input type="email" id="email" placeholder="Email Id">
+                <input type="text" id="city" placeholder="City">
+                <br>
+                <textarea name="Remarks" id="" cols="30" rows="2"></textarea>
+                <hr>
+                <button type="sumbit">Sumbit</button>
+            </form>
+        </div>
+    </div>
+
     <!-- footer section -->
     <footer>
         <div class="footer">
             <div id="footer">
-                <img src="image/gbs.png" alt="" class="footerlogo">
+                <img src="image/GBS-removebg-preview (1).png" alt="" class="footerlogo">
                 <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
                     in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
             </div>
             <div class="useful">
                 <h2>Useful Link</h2>
                 <ul id="useful">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="">Data Hosting</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                     <li><a href="">Busy Integrated Add-Ons</a></li>
                     <li><a href="">BUSY Software Associated Services</a></li>
                 </ul>
@@ -205,7 +234,7 @@
                 <h2>Quick Link</h2>
                 <ul id="useful">
                     <li><a href="">Terms & Condition</a></li>
-                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="Privacy.html">Privacy policy</a></li>
                 </ul>
             </div>
         </div>
@@ -245,8 +274,6 @@
         <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
         </p>
     </footer>
-
-
 
     <script src="js/script.js"></script>
 </body>

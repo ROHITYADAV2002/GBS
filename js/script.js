@@ -80,3 +80,35 @@
             document.querySelector('.enquir').classList.remove('view')
             document.querySelector('.log').classList.remove('viewlog')
         }
+
+        // Learn Busy Page JS 
+
+         // Contact us for job
+        
+         let popup = document.getElementById('popup');
+         function openpopup() {
+             popup.classList.add("open-popup");
+         }
+         function closepopup() {
+             popup.classList.remove("open-popup");
+         }
+ 
+         // Send Resume
+ 
+         let pop = document.getElementById('pop');
+         function openpop() {
+             pop.classList.add("open-pop");
+         }
+         function closepop() {
+             pop.classList.remove("open-pop");
+         }
+ 
+         // upgrade for software
+ 
+         let po = document.getElementById('po');
+         function openpo() {
+             po.classList.add("open-po");
+         }
+         function closepo() {
+             po.classList.remove("open-po");
+         }

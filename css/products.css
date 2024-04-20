@@ -1,0 +1,216 @@
+.busy {
+    display: flex;
+    width: 100%;
+}
+
+.animat {
+    width: 450px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#busy {
+    background-color: rgb(247, 237, 237);
+    width: 700px;
+    height: 380px;
+    margin-left: 100px;
+}
+
+#busy h1 {
+    color: rgb(39, 39, 245);
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+    font-size: 3rem;
+    animation: h1 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h1 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(2%);
+        opacity: 1;
+    }
+}
+
+.lorem {
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 50%;
+    animation: lorem 3s ease 0s 1 normal forwards;
+}
+
+@keyframes lorem {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-45%);
+        opacity: 1;
+    }
+}
+
+/* BUSY INFO */
+.info {
+    display: flex;
+    width: 1348px;
+    height: 600px;
+}
+
+.info img {
+    animation: img 3s ease 0s 1 normal forwards;
+}
+
+@keyframes img {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(70%);
+        opacity: 1;
+    }
+}
+
+#info h2 {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: h2 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h2 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#info1 h2 {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: h2 3s ease 0s 1 normal forwards;
+}
+
+@keyframes h2 {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#info {
+    background-color: rgb(66, 135, 245);
+    width: 550px;
+    padding-top: 50px;
+}
+
+#info1 {
+    background-color: rgb(135, 135, 135);
+    width: 550px;
+    padding-top: 50px;
+}
+
+#info p {
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    animation: p 3s ease 0s 1 normal forwards;
+}
+
+@keyframes p {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 1;
+    }
+}
+
+#info1 p {
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    animation: p 3s ease 0s 1 normal forwards;
+}
+
+@keyframes p {
+    75% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 1;
+    }
+}
+
+#info button {
+    border: 1px solid white;
+    width: 206px;
+    position: absolute;
+    margin-left: 119px;
+    padding: 5px;
+    margin-top: -171px;
+    background-color: rgb(66, 135, 245);
+    color: white;
+}
+
+#info1 button {
+    border: 1px solid white;
+    width: 206px;
+    position: absolute;
+    margin-left: 119px;
+    padding: 5px;
+    margin-top: -171px;
+    background-color: rgb(135, 135, 135);
+    color: white;
+}
+
+#info a button:hover {
+    background-color: red;
+    border: none;
+}
+
+#info1 a button:hover {
+    background-color: red;
+    border: none;
+}
+
+/* Choose Your Busy */
+
