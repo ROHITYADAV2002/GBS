@@ -661,7 +661,7 @@ a:hover {
 
 
 /* Responsive Design */
-@media (max-width :480px) {
+@media (max-width :600px) {
 
     /* Need help section */
     .need {
@@ -674,7 +674,7 @@ a:hover {
     }
 
     .fa-phone {
-        margin-left: 141px;
+        margin-left: 166px;
         position: absolute;
     }
 
@@ -684,7 +684,7 @@ a:hover {
     }
 
     #no {
-        margin-left: 163px;
+        margin-left: 190px;
         position: absolute;
         font-size: 16px;
     }
@@ -921,10 +921,15 @@ a:hover {
         margin: 5px;
     }
 
+    #footer {
+        margin-left: 8px;
+    }
+
     #footer p {
-        width: 433px;
-        font-size: 30px;
-        margin-left: -76px;
+        width: 534px;
+        font-size: 24px;
+        margin-left: -8px;
+        margin-top: -91px;
     }
 
     .useful {
@@ -936,7 +941,7 @@ a:hover {
     .quick {
         margin-top: 20px;
         font-size: 30px;
-        margin-left: -222px;
+        margin-left: -107px;
     }
 
     .contact h2 {
@@ -947,6 +952,10 @@ a:hover {
         display: block;
         margin-left: 65px;
         margin-top: 42px;
+    }
+
+    .contact {
+        margin-left: 82px;
     }
 
     #contact {
@@ -978,7 +987,7 @@ a:hover {
     }
 
     #copy {
-        margin-left: -5px;
-        width: 433px;
+        margin-left: 16px;
+        width: 503px;
     }
 }

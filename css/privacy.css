@@ -112,3 +112,8 @@
     transform: translate(-150%, -90%) scale(1);
     position: absolute;
 }
+footer{
+    background-color: #efefef;
+    padding: 40px;
+    margin-top: 0px;
+}
