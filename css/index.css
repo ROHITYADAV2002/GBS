@@ -106,7 +106,7 @@
 }
 
 #logo {
-    width: 80px;
+    width: 164px;
     display: flex;
     margin-left: 102px;
     margin-top: 10px;
@@ -115,7 +115,7 @@
 .mail {
     float: right;
     margin-right: 111px;
-    margin-top: -37px;
+    margin-top: -59px;
 }
 
 .mail span {
@@ -388,7 +388,7 @@
 
 .card-img-top {
     width: 464px;
-    height: 211px;
+    height: 211px !important;
 
 }
 
@@ -430,13 +430,12 @@
 }
 
 .card-text {
-    font-family: monospace;
+    font-family: Mate;
 }
 
 /* service */
 .service {
     background-color: rgb(199 241 241);
-    ;
     margin-top: 30px;
     padding-bottom: 30px;
 }
@@ -512,7 +511,7 @@
 }
 
 .us p {
-    font-family: monospace;
+    font-family: Mate;
     width: 686px;
     font-size: 23px;
     margin-left: 229px;
@@ -545,10 +544,9 @@ footer {
 
 
 #footer img {
-    width: 406px;
-    height: 255px;
-    margin-top: -114px;
-    ;
+    width: 312px;
+    height: 149px;
+    margin-top: -25px;
 }
 
 #footer {
@@ -561,7 +559,7 @@ footer {
     padding-top: 10px;
     color: black;
     font-size: 20px;
-    margin-top: -55px;
+    margin-top: -16px;
 }
 
 .useful {
@@ -698,7 +696,7 @@ a:hover {
     }
 
     .showloginform {
-        top: 92%;
+        top: 197%;
     }
 
     .loginform span {
@@ -717,6 +715,7 @@ a:hover {
 
     }
 
+
     /* Logo section */
     #logo {
         margin-left: 22px;
@@ -729,6 +728,7 @@ a:hover {
     /* Enqurie Button */
     header {
         margin-top: -39px;
+        padding-left: 1px;
 
     }
 
@@ -755,7 +755,7 @@ a:hover {
     /* /* slider enquri button * */
 
     .viewlog {
-        top: 80%;
+        top: 227%;
     }
 
     #enquri {
@@ -766,11 +766,21 @@ a:hover {
 
     /* About Us */
     #who {
-        display: none;
+        margin-top: -20px;
+        margin-left: 26px;
     }
 
-    .we-are {
-        margin-left: 78px;
+    .global {
+        width: 329px;
+    }
+
+    .read button {
+        width: 110px;
+    }
+
+    .we-are img {
+        margin-left: -75px;
+        width: 276px;
     }
 
     /* Products section */
@@ -792,9 +802,13 @@ a:hover {
     }
 
     .card {
-        margin-left: auto;
+        margin-left: 84px;
         border: none;
         width: 25rem;
+    }
+
+    #card8 {
+        margin-left: 86px !important;
     }
 
     .carousel-control {
@@ -820,7 +834,7 @@ a:hover {
         font-size: 17px;
         width: 302px;
         text-align: center;
-        margin-left: 69px;
+        margin-left: 131px;
     }
 
     #ser span {
@@ -842,9 +856,9 @@ a:hover {
     }
 
     .card1 {
-        background-color: white;
-        border-radius: 10px;
-        height: 300px;
+        height: 308px;
+        width: 400px;
+        margin-left: 65px;
     }
 
     .service img {
@@ -875,8 +889,8 @@ a:hover {
     #us {
         font-size: 13px;
         text-align: center;
-        margin-left: 91px;
-        width: 261px;
+        margin-left: 210px;
+        width: 184px;
     }
 
     #us span {
@@ -888,14 +902,14 @@ a:hover {
     }
 
     .us img {
-        margin-left: 179px;
-        margin-top: -37px;
+        margin-left: 248px;
+        margin-top: -12px;
         width: 97px;
         height: 91px;
     }
 
     .us p {
-        width: 363px;
+        width: 491px;
         font-size: 20px;
         margin-left: 55px;
         margin-top: 1px;
@@ -903,17 +917,19 @@ a:hover {
 
 
     .most {
-        width: 501px;
+        width: 594px;
         position: absolute;
-        margin-left: -17px;
-        font-size: 20px;
+        margin-left: -7px;
+        font-size: 13px;
         margin-right: 10px;
-        margin-top: 10px;
+        margin-top: -7px;
     }
 
     /* FOOTER SECTION */
     footer {
         width: 100%;
+        padding-top: 137px;
+        margin-top: -141px;
     }
 
     .footer {
@@ -923,13 +939,21 @@ a:hover {
 
     #footer {
         margin-left: 8px;
+        margin-top: -118px !important;
+    }
+
+    #footer img {
+        margin-left: 94px;
+        width: 199px;
+        margin-top: -19px;
+        height: 95px;
     }
 
     #footer p {
-        width: 534px;
-        font-size: 24px;
-        margin-left: -8px;
-        margin-top: -91px;
+        width: 503px;
+        font-size: 20px;
+        margin-left: -43px;
+        margin-top: -23px;
     }
 
     .useful {
@@ -983,11 +1007,16 @@ a:hover {
 
     #busylogo {
         margin-top: 20px;
-        margin-right: 1px;
+        margin-right: 56px;
     }
 
     #copy {
-        margin-left: 16px;
-        width: 503px;
+        margin-left: 36px;
+        text-align: center;
+        width: 405px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
     }
 }

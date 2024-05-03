@@ -533,4 +533,18 @@ footer {
         margin-top: 20px;
         margin-right: 26px;
     }
+    footer{
+        padding-top: 137px;
+        margin-top: 20px;
+    }
+    #footer p {
+        width: 534px;
+        font-size: 21px;
+        margin-left: -34px;
+        margin-top: -12px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
 }

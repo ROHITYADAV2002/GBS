@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,28 +22,63 @@
         <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
         <div class="overlay"></div>
         <div class="loginform">
-            <form action="" onsubmit="return validateFrom()">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
                 <h4>Request a Call</h4>
                 <span onclick="closeModle()">&times;</span>
                 <hr>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                     <p id="userError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
                     <p id="emailError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Mobile No.</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                     <p id="phoneError" class="error"></p>
                     <hr>
                 </div>
-                <a href=""> <button type="submit" class="btn btn-primary">Sent Request</button> </a>
+                 <button type="submit" class="btn btn-primary">Sent Request</button> 
             </form>
+            <!-- <form action="https://formspree.io/f/xqkrnppe" method="POST"> -->
+                <!-- <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label> -->
+                
+                <!-- <h4>Request a Call</h4>
+                <span onclick="closeModle()">&times;</span>
+                <hr>
+                <div class="mb-3">
+                    <label  class="form-label">Name <br>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    <p id="userError" class="error"></p> 
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address <br>
+                         <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                    <p id="emailError" class="error"></p>
+                    </label>
+                   
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Mobile No. <br>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
+                    <p id="phoneError" class="error"></p>
+                    </label>
+                    <hr>
+                </div>
+                <button type="submit">Send</button> -->
+            <!-- </form> -->
         </div>
         <div id="need">
             <i class="fa-solid fa-phone"></i>
@@ -50,7 +88,7 @@
 
     <!-- Logo Section -->
     <div class="logo">
-        <img src="image/gbs.png" alt="" id="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
         <div class="mail">
             <i class="fa-solid fa-envelope"></i>
             <span>Mail Us For Support</span>
@@ -61,7 +99,7 @@
     <!-- Navbar Section -->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: cursive;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: Mate;  font-weight: 900;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -77,12 +115,23 @@
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Product</a>
+                            <a class="nav-link" href="products.html">Product</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Service</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
+
+
+                            </ul>
                         </li>
-                    
+
                         <li class="nav-item">
                             <a class="nav-link" href="learnBusy.html">Learn Busy</a>
                         </li>
@@ -91,7 +140,7 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex">
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
                         <button onclick="show() " class="now">Enquire
                             Now</button>
                         <div class="over"></div>
@@ -101,33 +150,33 @@
                             <span onclick="closem()">&times;</span>
                             <hr>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="Company" placeholder=" Company Name"
+                                <input type="text" class="form-control" name="company" id="Company" placeholder=" Company Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 1" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="Address" placeholder="Address 1" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Address 1</label>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 2" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="remarks" placeholder="Address 2" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Remarks</label>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="City" required>
+                                <input type="text" class="form-control" name="city" id="city" placeholder="City" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                                 <p id="phoneError" class="error"></p>
                                 <hr>
                             </div>
@@ -148,7 +197,8 @@
                     <img src="image/Accounting-software-scaled.webp" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/areas-where-accounting-software-makes-difference-1.png" class="d-block w-100 " alt="...">
+                    <img src="image/areas-where-accounting-software-makes-difference-1.png" class="d-block w-100 "
+                        alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="image/Busy-Software-Download.webp " class="d-block w-100 " alt="...">
@@ -174,7 +224,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <form class="d-flex">
+        <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
             <button onclick="view()" id="enquri">Enquire
                 Now</button>
             <div class="enquir"></div>
@@ -184,31 +234,31 @@
                 <span onclick="hide()">&times;</span>
                 <hr>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="Company" placeholder=" Company Name" required>
+                    <input type="text" class="form-control" name="company" id="Company" placeholder=" Company Name" required>
                     <p id="userError" class="error"></p>
                 </div>
                 <div class="form-floating pb-2">
-                    <textarea class="form-control" placeholder="Address 1" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" name="address" placeholder="Address 1" id="floatingTextarea"></textarea>
                     <label for="floatingInputInvalid">Address 1</label>
                 </div>
                 <div class="form-floating pb-2">
-                    <textarea class="form-control" placeholder="Address 2" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" name="remarks" placeholder="Address 2" id="floatingTextarea"></textarea>
                     <label for="floatingInputInvalid">Remarks</label>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name" required>
                     <p id="userError" class="error"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Id" required>
                     <p id="emailError" class="error"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="City" required>
+                    <input type="email" class="form-control" name="city" id="city" placeholder="City" required>
                     <p id="emailError" class="error"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                     <p id="phoneError" class="error"></p>
                     <hr>
                 </div>
@@ -222,7 +272,7 @@
         <div id="who">
             <p class="we">WHO WE ARE</p>
             <h1 id="we">Business Software <span>Professionals</span></h1>
-            <p class="global">
+            <p class="global" style="font-family: Mate;">
                 Global Business Sloutions is a leading Accounting Software Solutions provider for Large Businesses and
                 SMEs, serving more than 2500 Clients across India, having its offices in Mumbai.
             </p>
@@ -244,18 +294,16 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <div class="carditem">
-                        <div class="card">
-                            <img src="image/busy-mobile-app-banner-img-1.png" class="card-img-top" alt="...">
+                        <div class="card" id="card8">
+                            <img src="image/customer-loyalty-plus.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Busy Mobile App</h5>
-                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
-                                    Accounting
-                                    Software to offer world-class features &amp; experience to customers. allows users
-                                    to sync data
-                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                                <h5 class="card-title">Customer Loyalty Plus </h5>
+                                <p class="card-text">Busy Addon to run rewards program for customer retention &
+                                    motivates customers to continue buying from your brand instead of a competitor.
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="row1">
                             <img src="image/busy-no-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Busy Mobile App</h5>
@@ -272,25 +320,21 @@
                 <div class="carousel-item" data-bs-interval="500">
                     <div class="carditem">
                         <div class="card">
-                            <img src="image/busy-online-banner-1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Busy Mobile App</h5>
-                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
-                                    Accounting
-                                    Software to offer world-class features &amp; experience to customers. allows users
-                                    to sync data
-                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
-                            </div>
-                        </div>
-                        <div class="card">
                             <img src="image/busy-to-google-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Busy Mobile App</h5>
-                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
-                                    Accounting
-                                    Software to offer world-class features &amp; experience to customers. allows users
-                                    to sync data
-                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                                <h5 class="card-title">Busy to Google (B2G)</h5>
+                                <p class="card-text">Busy Addon to sync your busy software data to google sheets (Busy
+                                    Google Sheets Addon) like Busy Item List, Customer List, Account Balance, Stock
+                                    Balance, Pending Order (So), Pending Order (Po) Busy Sale Order (Register) etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card" id="row1">
+                            <img src="image/message-automation-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Message Automation - Send Invoices, Payment Reminders</h5>
+                                <p class="card-text">Busy Addon allows users to Send Invoices, Paymnet Reimnders,
+                                    Account Statements as PDF attachement directly from BUSY.</p>
                             </div>
                         </div>
                     </div>
@@ -298,25 +342,22 @@
                 <div class="carousel-item">
                     <div class="carditem">
                         <div class="card">
-                            <img src="image/busy-online-banner-1.png" class="card-img-top" alt="...">
+                            <img src="image/tsplus-Advanced.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Busy Mobile App</h5>
-                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
-                                    Accounting
-                                    Software to offer world-class features &amp; experience to customers. allows users
-                                    to sync data
-                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                                <h5 class="card-title">TSplus Advanced Security</h5>
+                                <p class="card-text">Secure your corporate servers and remote work infrastructure with
+                                    the most powerful set of security features ever combined in a comprehensive
+                                    cybersecurity toolbox.
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="image/busy-to-google-1.jpg" class="card-img-top" alt="...">
+                        <div class="card" id="row1">
+                            <img src="image/e-commerce-software.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Busy Mobile App</h5>
-                                <p class="card-text">Busy Mobile App is a powerful tool that connects with Busy Desktop
-                                    Accounting
-                                    Software to offer world-class features &amp; experience to customers. allows users
-                                    to sync data
-                                    on both systems, allows user to enter &amp; access the business data on the Go.</p>
+                                <h5 class="card-title">Kart Manger E-commerce Portals</h5>
+                                <p class="card-text">Busy Addon which heips import data from E-commerce Portals Like
+                                    eBay, Amazon,FlipKart,Paytm etc.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -459,38 +500,38 @@
             </div>
     </section>
 
-<!-- WHY CHOOSE US -->
+    <!-- WHY CHOOSE US -->
 
-<section id="whyChoose">
-    <h2 id="why">Why Choose Us?</h2>
-    <p id="us">Ensuring every single customer is 100% satisfied with the <span>Products & Services, GBS
-            Provides</span></p>
-    <div class="us">
-        <img src="image/gbs.png" alt="" srcset="">
-        <p>A dedicated Team of Professionals from the Industry with vast experience headed by Mr. Ajay Vishwakarma
-            having more than 14 years of experience and expertise in a range of software & services, which includes
-            Accounting, Taxation, Inventory Management, Payroll Management, HRMS and CRM. Our Clients trust us for -
-        </p>
-    </div>
-    <ul class="most">
-        <li>Most Cost-Effective and Reasonable Business Software Provider</li>
-        <li>Expertise in Offering Add-Ons and Individually Customized Software Provider</li>
-        <li>Timely, Convenient Expert Service Provider at Very Reasonable Cost</li>
-        <li>On-Site User Training and Support Provider</li>
-        <li>Yearly Service Support at Very Reasonable Cost</li>
-        <li>Easy Software Upgradation and Update.</li>
-        <li>One Point Solution for all your business needs related to Accounting Software, Inventory Management,
-            Payroll Management, HRMS, CRM & Data Hosting Services etc.</li>
+    <section id="whyChoose">
+        <h2 id="why">Why Choose Us?</h2>
+        <p id="us">Ensuring every single customer is 100% satisfied with the <span>Products & Services, GBS
+                Provides</span></p>
+        <div class="us">
+            <img src="image/GBS1-removebg-preview.png" alt="" srcset="">
+            <p>A dedicated Team of Professionals from the Industry with vast experience headed by Mr. Ajay Vishwakarma
+                having more than 14 years of experience and expertise in a range of software & services, which includes
+                Accounting, Taxation, Inventory Management, Payroll Management, HRMS and CRM. Our Clients trust us for -
+            </p>
+        </div>
+        <ul class="most" style="  font-family: Mate;">
+            <li>Most Cost-Effective and Reasonable Business Software Provider</li>
+            <li>Expertise in Offering Add-Ons and Individually Customized Software Provider</li>
+            <li>Timely, Convenient Expert Service Provider at Very Reasonable Cost</li>
+            <li>On-Site User Training and Support Provider</li>
+            <li>Yearly Service Support at Very Reasonable Cost</li>
+            <li>Easy Software Upgradation and Update.</li>
+            <li>One Point Solution for all your business needs related to Accounting Software, Inventory Management,
+                Payroll Management, HRMS, CRM & Data Hosting Services etc.</li>
 
-    </ul>
-</section>
+        </ul>
+    </section>
 
 
     <!-- footer section -->
     <footer>
         <div class="footer">
             <div id="footer">
-                <img src="image/GBS-removebg-preview (1).png" alt="" class="footerlogo">
+                <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
                 <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
                     in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
             </div>
@@ -499,16 +540,16 @@
                 <ul id="useful">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="">Data Hosting</a></li>
+                    <li><a href="datahosting.html">Data Hosting</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="">Busy Integrated Add-Ons</a></li>
-                    <li><a href="">BUSY Software Associated Services</a></li>
+                    <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                    <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
                 </ul>
             </div>
             <div class="quick">
                 <h2>Quick Link</h2>
                 <ul id="useful">
-                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="term.html">Terms & Condition</a></li>
                     <li><a href="Privacy.html">Privacy policy</a></li>
                 </ul>
             </div>
@@ -542,8 +583,8 @@
             <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://github.com/rohityaya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <hr>
         <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav

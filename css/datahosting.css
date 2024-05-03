@@ -301,6 +301,13 @@
         border-radius: 6px;
         width: 90px;
     }
-
+    footer{
+        margin-top: 0px;
+        padding-top: 137px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
 
 }

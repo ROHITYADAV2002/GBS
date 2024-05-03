@@ -588,5 +588,19 @@ td {
         border-radius: 6px;
         width: 90px;
     }
+    footer{
+        margin-top: 0px;
+        padding-top: 137px;
+    }
+    #footer p {
+        width: 503px;
+        font-size: 20px;
+        margin-left: -9px;
+        margin-top: -23px;
+    }
+    header {
+        margin-top: -21px;
+        padding-left: 1px;
+    }
 
 }

@@ -21,23 +21,23 @@
         <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
         <div class="overlay"></div>
         <div class="loginform">
-            <form action="" onsubmit="return validateFrom()">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
                 <h4>Request a Call</h4>
                 <span onclick="closeModle()">&times;</span>
                 <hr>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                     <p id="userError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
                     <p id="emailError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Mobile No.</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                     <p id="phoneError" class="error"></p>
                     <hr>
                 </div>
@@ -53,7 +53,7 @@
 
     <!-- Logo Section -->
     <div class="logo">
-        <img src="image/gbs.png" alt="" id="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
         <div class="mail">
             <i class="fa-solid fa-envelope"></i>
             <span>Mail Us For Support</span>
@@ -83,16 +83,18 @@
                             <a class="nav-link" href="products.html">Product</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Service
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated Services</a></li>
-                              <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
-                            
-                             
+                                <li><a class="dropdown-item" href="busysoftware.html">BUSY Software Associated
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="datahosting.html">Data Hosting</a></li>
+
+
                             </ul>
-                          </li>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="learnBusy.html">Learn Busy</a>
                         </li>
@@ -101,7 +103,7 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex">
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
                         <button onclick="show() " class="now">Enquire
                             Now</button>
                         <div class="over"></div>
@@ -111,33 +113,33 @@
                             <span onclick="closem()">&times;</span>
                             <hr>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="Company" placeholder=" Company Name"
+                                <input type="text" class="form-control" name="company" id="Company" placeholder=" Company Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 1" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="address" placeholder="Address 1" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Address 1</label>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 2" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="remarks" placeholder="Address 2" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Remarks</label>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="City" required>
+                                <input type="email" class="form-control" name="city" id="city" placeholder="City" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                                 <p id="phoneError" class="error"></p>
                                 <hr>
                             </div>
@@ -160,19 +162,19 @@
         <button class="upgrade" onclick="openpo()">Upgrade for Software</button>
 
         <div class="po" id="po">
-            <form action="">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST">
                 <h2>Upgrade Your Software</h2>
                 <span onclick="closepo()">&times;</span>
                 <hr>
-                <input type="text" id="busysr" placeholder="Busy Sr">
+                <input type="text" id="busysr" name="busy" placeholder="Busy Sr">
                 <br>
-                <input type="text" id=" co.name" placeholder="Company Name">
+                <input type="text" name="company" id=" co.name" placeholder="Company Name">
                 <br>
-                <input type="text" id="name" placeholder="Name">
-                <input type="tel" id="mobile" placeholder="Mobile No.">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="tel" name="phone" id="mobile" placeholder="Mobile No.">
                 <br>
-                <input type="email" id="email" placeholder="Email Id">
-                <input type="text" id="city" placeholder="City">
+                <input type="email" name="email" id="email" placeholder="Email Id">
+                <input type="text" name="city" id="city" placeholder="City">
                 <br>
                 <textarea name="Remarks" id="" cols="30" rows="2"></textarea>
                 <hr>
@@ -185,29 +187,24 @@
     <div class="service-software">
         <p id="service-software">Services / Softwares – It means the products and services made available by Us via GBS,
             modules, and feature(s) or Our cloud software and applications for businesses, including associated offline
-            and
-            mobile applications (“Software”).
-
-            GBS respects your concerns about the privacy, and values the relationship we have with our users. GBS
-            Privacy
-            Policy outlines our privacy practices concerning the information collected through GBS websites,
-            application,
-            and the various social media platforms of GBS. This also includes any other online service that links to our
-            Privacy Policy, including any website and online service we offer on behalf of our authors (collectively
+            and mobile applications (“Software”). GBS respects your concerns about the privacy, and values the
+            relationship we have with our users. GBS
+            Privacy. Policy outlines our privacy practices concerning the information collected through GBS
+            websites,application, and the various social media platforms of GBS. This also includes any other online
+            service that links to ourPrivacy Policy, including any website and online service we offer on behalf of our
+            authors (collectively
             referred to as the “Sites”). Our Privacy Policy does not apply to info that you may share with us other than
-            through our Websites, such as over a phone call, by e-mail, or in person unless expressly indicated by GBS.
-
-            Kindly review our complete Privacy Policy and Terms mentioned below before using GBS Sites and its
-            Applications.
-            Mainly, please review the sections: What information GBS collects about you (which includes information
-            about
-            cookies and similar technologies). How we use your information? , and who we share your information with. By
+            through our Websites, such as over a phone call, by e-mail, or in person unless expressly indicated by
+            GBS.Kindly review our complete Privacy Policy and Terms mentioned below before using GBS Sites and its
+            Applications. Mainly, please review the sections: What information GBS collects about you (which includes
+            information
+            about cookies and similar technologies). How we use your information? , and who we share your information
+            with. By
             using the LakshIT site, you are accepting the terms mentioned in this Privacy Policy, and If you don`t wish
-            to
-            agree with the terms of this Privacy Policy, please do not use GBS Sites and Applications. Additionally, GBS
+            to agree with the terms of this Privacy Policy, please do not use GBS Sites and Applications. Additionally,
+            GBS
             reserves the right to mark changes in its Privacy Policy without any prior notice. Your continued use of
-            LakshIT
-            Sites following the posting of changes to these terms will mean you accept those changes.
+            GBS.Sites following the posting of changes to these terms will mean you accept those changes.
         </p>
         <h4>What Information We Collect About You</h4>
         <p id="service-software">The information is collected when you interact with LakshIT Sites and Applications.
@@ -412,14 +409,14 @@
             receive a copy of, specific information covered by this Privacy Policy. Depending on the jurisdiction, you
             may also have the right to request that we refrain from processing such data. Please bear in mind that if
             you exercise such rights, this may affect our ability to provide our products and services. You can also
-            reach us at our email id info@lakshitsoftware.in. While we make reasonable efforts to accommodate your
+            reach us at our email id gbdmumbai@gmail.com . While we make reasonable efforts to accommodate your
             request, we also reserve the right to impose certain restrictions and requirements on your claims, if
             allowed or required by applicable laws.
         </p>
 
         <h4>Changes to this Privacy Policy</h4>
         <p id="service-software">
-            As LakshIT Sites continue to develop, we may add new services and features to them. If these additions
+            As GBS Sites continue to develop, we may add new services and features to them. If these additions
             affect our Privacy Policy, or if other changes in our privacy practices or applicable laws necessitate
             changes to the Privacy Policy, this document will get updated accordingly. If we make a material change in
             the way we use your personal information, we will provide prominent notice of the change on the Sites or in
@@ -429,9 +426,9 @@
 
         <h4>How to OPT-OUT of Email Newsletters</h4>
         <p id="service-software">
-            You may always opt-out of receiving future commercial emails and newsletters from LakshIT. At LakshIT, we
+            You may always opt-out of receiving future commercial emails and newsletters from GBS. At GBS, we
             provide you with the opportunity to opt-out of receiving such communications from us by clicking on the
-            “unsubscribe” link within the email you receive or you can drop us a mail at info@lakshitsoftware.in to
+            “unsubscribe” link within the email you receive or you can drop us a mail at gbdmumbai@gmail.com to
             unsubscribe from our email list. Please note that your request to not to receive unsolicited commercial
             emails from us will not apply to messages that you request or that are not commercial. For example, we may
             contact you concerning any purchases you have made with us, even if you opt out of receiving unsolicited
@@ -440,7 +437,8 @@
 
         <h4>How You Can Reach Us</h4>
         <p id="service-software">
-            If you have any questions or query about this Privacy Policy, you may contact us at <a href="mail to:">gbdmumbai@gmail.com</a>
+            If you have any questions or query about this Privacy Policy, you may contact us at <a
+                href="mail to:">gbdmumbai@gmail.com</a>
         </p>
     </div>
 
@@ -448,7 +446,7 @@
     <footer>
         <div class="footer">
             <div id="footer">
-                <img src="image/GBS-removebg-preview (1).png" alt="" class="footerlogo">
+                <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
                 <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
                     in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
             </div>
@@ -457,10 +455,10 @@
                 <ul id="useful">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="">Data Hosting</a></li>
+                    <li><a href="datahosting.html">Data Hosting</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="">Busy Integrated Add-Ons</a></li>
-                    <li><a href="">BUSY Software Associated Services</a></li>
+                    <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                    <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
                 </ul>
             </div>
             <div class="quick">
@@ -500,8 +498,8 @@
             <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://github.com/rohityaya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <hr>
         <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
