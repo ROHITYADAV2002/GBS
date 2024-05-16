@@ -195,22 +195,23 @@
     /* cloud info */
     .cloud {
         height: 30px;
-        padding-left: 100px;
+        padding-left: 17px;
         font-size: 19px;
+        font-weight: 600;
     }
 
     #cloud {
         padding-left: 38px;
         position: absolute;
-        width: 542px;
+        width: 388px;
         font-size: 15px;
         font-weight: 600;
-        margin-top: -55%;
+        margin-top: 0%;
     }
 
     .data {
-        margin-left: 22%;
-        margin-top: -242px;
+        margin-left: 14%;
+        margin-top: 179px;
         width: 300px;
     }
 
@@ -222,17 +223,17 @@
     }
 
     .benefits img {
-        width: 547px;
-        margin-left: 4%;
+        width: 370px;
+        margin-left: 1%;
     }
 
     /*Prici  */
     .pricing {
-        margin-left: 24px;
+        margin-left: 2px;
     }
 
     .pricing p {
-        width: 517px;
+        width: 391px;
         font-size: 14px;
     }
 
@@ -270,8 +271,8 @@
 
     .open-info {
         visibility: visible;
-        top: 410%;
-        transform: translate(-20%, -60%) scale(1);
+        top: 103%;
+        transform: translate(-29%, -60%) scale(1);
         position: absolute;
     }
 
@@ -300,6 +301,15 @@
         border: none;
         border-radius: 6px;
         width: 90px;
+    }
+    .open-call {
+        visibility: visible;
+        top: 112%;
+        transform: translate(-50%, -60%) scale(1);
+        position: absolute;
+    }
+    #upgrade{
+        display: none;
     }
     footer{
         margin-top: 0px;

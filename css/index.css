@@ -672,8 +672,18 @@ a:hover {
     }
 
     .fa-phone {
-        margin-left: 166px;
+        margin-left: 117px;
         position: absolute;
+    }
+
+    #need a {
+        color: white;
+        font-weight: 100%;
+        text-decoration: none;
+        /* float: right; */
+        margin-left: 146px;
+        margin-right: -191px;
+        margin-top: -45px;
     }
 
     #need {
@@ -696,7 +706,7 @@ a:hover {
     }
 
     .showloginform {
-        top: 197%;
+        top: 63%;
     }
 
     .loginform span {
@@ -718,7 +728,7 @@ a:hover {
 
     /* Logo section */
     #logo {
-        margin-left: 22px;
+        margin-left: 115px;
     }
 
     .mail {
@@ -755,7 +765,7 @@ a:hover {
     /* /* slider enquri button * */
 
     .viewlog {
-        top: 227%;
+        top: 107%;
     }
 
     #enquri {
@@ -771,7 +781,8 @@ a:hover {
     }
 
     .global {
-        width: 329px;
+        width: 333px;
+        margin-top: 78%;
     }
 
     .read button {
@@ -779,15 +790,28 @@ a:hover {
     }
 
     .we-are img {
-        margin-left: -75px;
-        width: 276px;
+        margin-top: 109px;
+        margin-left: -293px;
+        width: 286px;
     }
 
     /* Products section */
 
+    #products {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    .card-body {
+        width: 364px;
+        padding-left: 43px;
+    }
+
+
     .carditem {
         display: block;
         height: 400px;
+        margin-left: -108px;
     }
 
     .card-img-top {
@@ -808,7 +832,8 @@ a:hover {
     }
 
     #card8 {
-        margin-left: 86px !important;
+        /* margin-left: 86px !important; */
+        margin-left: 10px;
     }
 
     .carousel-control {
@@ -827,14 +852,15 @@ a:hover {
 
     #service {
         text-align: center;
-        margin-left: 20px;
+        margin-left: -45px;
     }
+
 
     #ser {
         font-size: 17px;
         width: 302px;
         text-align: center;
-        margin-left: 131px;
+        margin-left: -5px;
     }
 
     #ser span {
@@ -857,8 +883,9 @@ a:hover {
 
     .card1 {
         height: 308px;
-        width: 400px;
-        margin-left: 65px;
+        position: absolute;
+        width: 369px;
+        margin-left: -34px;
     }
 
     .service img {
@@ -889,7 +916,7 @@ a:hover {
     #us {
         font-size: 13px;
         text-align: center;
-        margin-left: 210px;
+        margin-left: 96px;
         width: 184px;
     }
 
@@ -902,22 +929,23 @@ a:hover {
     }
 
     .us img {
-        margin-left: 248px;
+        margin-left: 136px;
         margin-top: -12px;
         width: 97px;
         height: 91px;
     }
 
     .us p {
-        width: 491px;
+        width: 370px;
         font-size: 20px;
-        margin-left: 55px;
+        margin-left: 12px;
         margin-top: 1px;
+
     }
 
 
     .most {
-        width: 594px;
+        width: 389px;
         position: absolute;
         margin-left: -7px;
         font-size: 13px;
@@ -929,7 +957,7 @@ a:hover {
     footer {
         width: 100%;
         padding-top: 137px;
-        margin-top: -141px;
+        margin-top: -99px;
     }
 
     .footer {
@@ -943,17 +971,18 @@ a:hover {
     }
 
     #footer img {
-        margin-left: 94px;
+        margin-left: 41px;
         width: 199px;
         margin-top: -19px;
         height: 95px;
     }
 
     #footer p {
-        width: 503px;
+        width: 340px;
         font-size: 20px;
-        margin-left: -43px;
-        margin-top: -23px;
+        margin-left: -10px;
+        margin-top: -17px;
+
     }
 
     .useful {
@@ -969,7 +998,7 @@ a:hover {
     }
 
     .contact h2 {
-        margin-left: -61px
+        margin-left: -99px
     }
 
     .contact {
@@ -988,33 +1017,52 @@ a:hover {
         margin-right: 200px;
     }
 
+    #contract {
+        display: flex;
+    }
+
     .fa-location-dot {
         color: rgb(31, 31, 202);
         padding-right: 20px;
+        font-size: 25px;
     }
 
     #register {
         font-weight: bold;
         padding-bottom: 5px;
+        position: absolute;
+        margin-left: 30px;
     }
 
     .register {
         width: 298px;
-        font-weight: 200;
+        font-weight: 600;
+        font-size: 18px;
         margin-left: 32px;
         padding: 5px;
     }
 
+    #contact .fa-phone {
+        font-size: 25px;
+    }
+
     #busylogo {
         margin-top: 20px;
-        margin-right: 56px;
+        margin-right: -25px;
+    }
+
+    #mo {
+        margin-left: 40px;
+        font-weight: 600;
+        font-size: 20px;
     }
 
     #copy {
-        margin-left: 36px;
+        margin-left: -48px;
         text-align: center;
         width: 405px;
     }
+
     header {
         margin-top: -21px;
         padding-left: 1px;

@@ -389,6 +389,7 @@ footer {
         margin-top: -21px;
         padding-left: 1px;
     }
+
     .busy {
         display: block;
         width: 100%;
@@ -397,7 +398,7 @@ footer {
     .animat {
         width: 249px;
         height: 150px;
-        margin-left: 166px;
+        margin-left: 76px;
         margin-top: 15px;
     }
 
@@ -406,7 +407,7 @@ footer {
         background-color: rgb(247, 237, 237);
         width: 525px;
         height: 313px;
-        margin-left: 14px;
+        margin-left: 0px;
     }
 
     #busy h1 {
@@ -414,19 +415,21 @@ footer {
         text-align: center;
         margin-top: 30px;
         opacity: 0;
+        margin-left: -153px;
         font-size: 3rem;
     }
 
     .lorem {
         width: 326px;
         margin-top: 17px;
+        margin-left: 176px;
     }
 
     /* BUSY INFO */
     .info {
         display: block;
-        margin-left: 46px;
-        margin-top: 20px;
+        margin-left: 0px;
+        margin-top: 14px;
     }
 
     #info h2 {
@@ -440,15 +443,31 @@ footer {
         text-align: center;
         color: white;
         opacity: 0;
+        margin-left: -72px;
 
+    }
+
+    .info img {
+        margin-left: -32px;
     }
 
     #info {
         background-color: rgb(66, 135, 245);
-        width: 461px;
+        width: 389px;
         height: 527px;
-        padding-top: 50px;
+        padding-right: 20px;
         margin-bottom: 20px;
+    }
+
+    #info button {
+        border: 1px solid white;
+        width: 206px;
+        position: absolute;
+        margin-left: 89px;
+        padding: 5px;
+        margin-top: -142px;
+        background-color: rgb(66, 135, 245);
+        color: white;
     }
 
     #info1 {
@@ -460,14 +479,24 @@ footer {
     }
 
     #info p {
-        font-size: 16px;
+        font-size: 17px;
+        width: 374px;
+        margin-left: -8px;
         height: 307px;
     }
 
 
     #info1 p {
         font-size: 16px;
+        width: 388px;
         height: 307px;
+        margin-left: -20px;
+        ;
+    }
+
+    #info1 button {
+        margin-left: 83px;
+        margin-top: -153px;
     }
 
     /* Choose Your Busy */
@@ -481,12 +510,12 @@ footer {
     }
 
     .divScroll {
-        margin-left: 19px;
+        margin-left: -3px;
         margin-top: 10px;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 350px;
-        width: 510px;
+        width: 393px;
     }
 
     table,
@@ -524,6 +553,7 @@ footer {
     .price h1 {
         text-align: center;
         color: blue;
+        margin-left: -11px;
         margin-bottom: 20px;
     }
 
@@ -534,45 +564,56 @@ footer {
     }
 
     .basic {
-        width: 462px;
-        margin-left: 47px;
+        width: 390px;
+        margin-left: -1px;
         height: 317px;
         background-color: #4765fc;
 
     }
+    .basic button {
+        border: none;
+        margin-left: 119px;
+    }
 
 
     #basic {
-        width: 462px;
-        margin-left: 47px;
+        width: 387px;
+        margin-left: 2px;
         height: 317px;
         background-color: white;
     }
+    #basic button {
+        border: none;
+        margin-left: 115px;
+    }
 
-  
+
 
     #note {
-        width: 566px;
+        width: 398px;
     }
 
     .note {
+        text-align: center;
         font-size: 16px;
-        margin-left: 46px;
-        width: 462px;
+        margin-left: 3px;
+        width: 377px;
     }
 
     .learn {
-        margin-left: 213px;
+        margin-left: 133px;
     }
-    footer{
+
+    footer {
         width: 100%;
         padding-top: 137px;
-        margin-left: -30px;
+        margin-left: -3px;
     }
+
     #footer p {
-        width: 503px;
+        width: 383px;
         font-size: 20px;
-        margin-left: -9px;
-        margin-top: -23px;
+        margin-left: -41px;
+        margin-top: -12px;
     }
 }

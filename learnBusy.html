@@ -19,23 +19,23 @@
         <p id="help" onclick="showModle()">Need Help?Request A Callback</p>
         <div class="overlay"></div>
         <div class="loginform">
-            <form action="" onsubmit="return validateFrom()">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST" onsubmit="return validateFrom()">
                 <h4>Request a Call</h4>
                 <span onclick="closeModle()">&times;</span>
                 <hr>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                     <p id="userError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
                     <p id="emailError" class="error"></p>
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Mobile No.</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                     <p id="phoneError" class="error"></p>
                     <hr>
                 </div>
@@ -50,7 +50,7 @@
 
     <!-- Logo Section -->
     <div class="logo">
-        <img src="image/gbs.png" alt="" id="logo">
+        <img src="image/GBS1-removebg-preview.png" alt="" id="logo">
         <div class="mail">
             <i class="fa-solid fa-envelope"></i>
             <span>Mail Us For Support</span>
@@ -99,7 +99,7 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex">
+                    <form action="https://formspree.io/f/xqkrnppe" method="POST" class="d-flex">
                         <button onclick="show() " class="now">Enquire
                             Now</button>
                         <div class="over"></div>
@@ -109,33 +109,33 @@
                             <span onclick="closem()">&times;</span>
                             <hr>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="Company" placeholder=" Company Name"
+                                <input type="text" class="form-control" name="company" id="Company" placeholder=" Company Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 1" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="address" placeholder="Address 1" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Address 1</label>
                             </div>
                             <div class="form-floating pb-2">
-                                <textarea class="form-control" placeholder="Address 2" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" name="remarks" placeholder="Address 2" id="floatingTextarea"></textarea>
                                 <label for="floatingInputInvalid">Remarks</label>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"
                                     required>
                                 <p id="userError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Id" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="City" required>
+                                <input type="email" class="form-control" name="city" id="city" placeholder="City" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="phone" placeholder="Mobile No." required>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Mobile No." required>
                                 <p id="phoneError" class="error"></p>
                                 <hr>
                             </div>
@@ -175,18 +175,18 @@
 
     <button id="cont" onclick="openpop()">Send Resume</button>
     <div class="pop" id="pop">
-        <form action="">
+        <form action="https://formspree.io/f/xqkrnppe" method="POST">
             <h2>Upload Resume</h2>
             <span onclick="closepop()">&times;</span>
             <hr>
-            <input type="text" id="popname" placeholder="Name">
+            <input type="text" name="name" id="popname" placeholder="Name">
             <br>
-            <input type="email" id="nam" placeholder="Email">
-            <input type="tel" id="nam" placeholder="Phone Number">
+            <input type="email" name="email" id="nam" placeholder="Email">
+            <input type="tel" name="phone" id="nam" placeholder="Phone Number">
             <br>
             <label for="upload" id="lab">Upload Resum</label>
             <br>
-            <input type="file" id="fliename" placeholder="Upload File">
+            <input type="file" name="file" id="fliename" placeholder="Upload File">
             <br>
             <hr>
             <button type="submit">Sumbit</button>
@@ -198,19 +198,19 @@
         <button class="upgrade" onclick="openpo()">Upgrade for Software</button>
 
         <div class="po" id="po">
-            <form action="">
+            <form action="https://formspree.io/f/xqkrnppe" method="POST">
                 <h2>Upgrade Your Software</h2>
                 <span onclick="closepo()">&times;</span>
                 <hr>
-                <input type="text" id="busysr" placeholder="Busy Sr">
+                <input type="text" name="busy" id="busysr" placeholder="Busy Sr">
                 <br>
-                <input type="text" id=" co.name" placeholder="Company Name">
+                <input type="text" name="company" id=" co.name" placeholder="Company Name">
                 <br>
-                <input type="text" id="name" placeholder="Name">
-                <input type="tel" id="mobile" placeholder="Mobile No.">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="tel" name="phone" id="mobile" placeholder="Mobile No.">
                 <br>
-                <input type="email" id="email" placeholder="Email Id">
-                <input type="text" id="city" placeholder="City">
+                <input type="email" name="email" id="email" placeholder="Email Id">
+                <input type="text" name="city" id="city" placeholder="City">
                 <br>
                 <textarea name="Remarks" id="" cols="30" rows="2"></textarea>
                 <hr>
@@ -223,7 +223,7 @@
     <footer>
         <div class="footer">
             <div id="footer">
-                <img src="image/GBS-removebg-preview (1).png" alt="" class="footerlogo">
+                <img src="image/GBS1-removebg-preview.png" alt="" class="footerlogo">
                 <p>GBS, Leading Software Solution provider for SMEs, serving more than 2500 Clients across Mumbai, deals
                     in wide range of Software from Accounting, Taxation, Inventory, Payroll, HRMS and CRM Industry.</p>
             </div>
@@ -232,16 +232,16 @@
                 <ul id="useful">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="">Data Hosting</a></li>
+                    <li><a href="datahosting.html">Data Hosting</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="">Busy Integrated Add-Ons</a></li>
-                    <li><a href="">BUSY Software Associated Services</a></li>
+                    <li><a href="Busy corporate.html">Busy Integrated Add-Ons</a></li>
+                    <li><a href="busysoftware.html">BUSY Software Associated Services</a></li>
                 </ul>
             </div>
             <div class="quick">
                 <h2>Quick Link</h2>
                 <ul id="useful">
-                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="term.html">Terms & Condition</a></li>
                     <li><a href="Privacy.html">Privacy policy</a></li>
                 </ul>
             </div>
@@ -275,13 +275,14 @@
             <a href="https://www.instagram.com/busyaccountingsoftware1" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://github.com/rohityaya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@BUSYAccounting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <hr>
         <p id="copy">Copyrights © 2024 All Rights Reserved, Global Business Sloutions. Design & Developed by Rohit Yadav
         </p>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 
